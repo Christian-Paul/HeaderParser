@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 var port = process.env.PORT || 3000;
+app.enable('trust proxy');
 
 app.get('/', function(req, res) {
     var ip, language, software;
